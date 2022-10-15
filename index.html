@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Assignment</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <a href="index.html" id="logo" class="nav-title">Em's Portfolio</a>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <button><a href="#assignments">Check out the assignments</a></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Portfolio assignment</h1>
+      <section id="headline">
+        <div>
+          <h2>Design for developpers theme</h2>
+          <p>
+            I learned how to animate with javascript and also how to use svgs. <br />
+            Aswell as how to install and use frameworks to make your job easier.
+            <br />
+            Other than that I had fun trying colors and fonts and make pairings. <br />
+            Enjoy.
+          </p>
+        </div>
+      </section>
+      <section id="assignments">
+        <h2>Assignments</h2>
+        <div class=" scroll-section">
+          <!-- TODO make modals with the documentation for each and a link to the solution -->
+          <article class="card">
+            <h3>13C.01.01 Fonts and UI components</h3>
+            <p>A digital concept for font pairing and ui components.</p>
+            <button id="ui-btn" value="ui" class="secondary">Click here for details</button>
+          </article>
+
+          <article class="card">
+            <h3>13C.01.02 Working with colors and Animations</h3>
+            <p>A digital concept around colors and animations.</p>
+            <button id="anim-btn" value="anim" class="secondary">Click here for details</button>
+          </article>
+          <article class="card">
+            <h3>13C.02.01 Responsive design</h3>
+            <p>A digital solution for a simple responsive one-pager (that also uses knowledge from both earlier assignments).</p>
+            <button id="res-btn" value="res" class="secondary">Click here for details</button>
+          </article>
+          <article class="card">
+            <h3>13C.02.02 Designing with frameworks</h3>
+            <p>A simple one-pager styled only with frameworks (Pico).</p>
+            <button id="frame-btn" value="frame" class="secondary">Click here for details</button>
+          </article>
+        </div>
+      </section>
+      <section id="conclusion">
+        <div>
+          <h2>Conclusion</h2>
+          <div class="wrap">
+            <p>
+              I had a lot of fun experimenting with animations as well as colors and fonts.
+              <br />
+              I learnt a lot about svgs and I found out that I don't want to use frameworks if I can avoid it.
+            </p>
+            <br />
+            <p>
+              As for conventions. It's nice to have them and some of them are really important to maintain but the more i work design, the more I feel
+              like finding creative ways of breaking them (and make it work fine).
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer ><p>Emma Pasquer 2022</p></footer>
+
+    <!-- ****** -->
+
+    <div class="modal-wrapper">
+      <article class="modal">
+        <div class="image1">
+          <!-- <img class="modal-img img1" src="img/reponsive_1.png" alt="responsive1" /> -->
+        </div>
+        <div class="modal-text">
+          <div class="close">&times</div>
+          <div>
+            <h2 class="modal-h2">Responsive design</h2>
+            <p class="modal-p1">A digital solution for a simple responsive one-pager (that also uses knowledge from both earlier assignments).</p>
+            <br />
+            <p class="modal-p2">
+              I used grid and flex to get the different elements to be where i wanted them to, that way it made the whole website responsive aswell.
+            </p>
+          </div>
+          <button class="tertiary">
+            <a class="modal-link" href="https://emma673r.github.io/13c_02_01_responsive_design/">Click to see the solution</a>
+          </button>
+        </div>
+        <h3>Details</h3>
+        <div class="modal-graphics">
+          <div class="image2"></div>
+          <div class="image3"></div>
+          <!-- <img class="modal-img img2" src="img/reponsive_2.png" alt="responsive2" /> -->
+          <!-- <img class="modal-img img3" src="img/reponsive_3.png" alt="responsive3" /> -->
+        </div>
+      </article>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
