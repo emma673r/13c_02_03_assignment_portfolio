@@ -19,7 +19,6 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: inherit;
@@ -78,7 +77,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .secondary {
@@ -186,7 +185,9 @@ h4 {
   height: fit-content;
 }
 
-.nav {
+nav {
+  text-decoration: none;
+  text-transform: capitalize;
   height: 100px;
   width: 100vw;
   background-color: var(--color-primary2);
@@ -198,27 +199,26 @@ h4 {
   padding-right: 20px;
 }
 
-.nav-btn {
-  display: none;
+nav button {
+  margin-right: 20px;
 }
+
+/* .nav-btn {
+  display: none;
+} */
 
 #logo {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-.nav > .nav-links > a {
-  padding-right: 20px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
+/* 
 .nav-links > a:hover {
   color: var(--color-accent);
 }
 
 .nav > #nav-check {
   display: none;
-}
+} */
 
 main {
   padding: 10px 80px 10px 80px;
@@ -370,6 +370,82 @@ main {
 /* responsive burger menu */
 
 @media (max-width: 750px) {
+  :root {
+    --size-h4: 1rem;
+    --size-h3: 1.5rem;
+    --size-h2: 2.25rem;
+    --size-h1: 3.375rem;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 5vh;
+    padding-top: 6vh;
+  }
+
+  main {
+    padding: 0;
+    padding-right: 2vh;
+    padding-left: 2vh;
+  }
+  .card {
+    margin-bottom: 3vh;
+  }
+  #logo,
+  nav button {
+    margin: 0;
+  }
+
+  #conclusion .wrap {
+    flex-direction: column;
+    gap: 3vh;
+    max-width: 30ch;
+  }
+
+  .modal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 2vw;
+  }
+
+  .image1 {
+    grid-row: 1;
+    grid-column: span 2;
+    height: 40vh;
+  }
+
+  .modal-graphics {
+    flex-direction: column;
+    grid-row: 5;
+    grid-column: span 2;
+    padding-bottom: 5vh;
+  }
+  .modal-p2 {
+    padding-bottom: 4vh;
+  }
+
+  .modal-text {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .modal h3 {
+    grid-row: 3;
+    grid-column: span 2;
+  }
+
+  .image2,
+  .image3 {
+    width: 100%;
+  }
+
+  /* .nav {
+    z-index: 900;
+    overflow-y: visible;
+    height: 100%;
+  }
+
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -415,9 +491,8 @@ main {
   }
 
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+    height: 100%;
+  } */
 }
 
 @media (prefers-color-scheme: dark) {
